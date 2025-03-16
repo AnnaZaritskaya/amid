@@ -1,0 +1,26 @@
+@use "../mixins" as *;
+
+// Блок: title
+.title {
+    color: #021d1a;
+
+    &--h1 {
+        font-family: var(--second-family);
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 1.25;
+    }
+
+    &--h2 {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 1.82;
+    }
+
+    &--h3 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 24px;
+    }
+}

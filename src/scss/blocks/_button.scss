@@ -1,0 +1,96 @@
+@use "../mixins" as *;
+
+// Блок: button
+.button {
+    $block: &;
+
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &__arrow {
+        width: 14px;
+        height: 14px;
+        stroke: #fff !important;
+        margin-left: 14px;
+    }
+
+    &__icon-circle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 16px;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        fill: #ff823b;
+    }
+
+    &--color {
+        background: #ff823b;
+        border-radius: 31px;
+        padding: 18px 39px;
+    }
+
+    &--dark {
+        background: none;
+        color: #124f48;
+
+        & #{$block}__arrow {
+            stroke: #124f48;
+            margin-left: 12px;
+        }
+
+        &:hover {
+            opacity: 1;
+            color: #ff823b;
+
+            & #{$block}__arrow {
+                stroke: #ff823b;
+            }
+        }
+    }
+
+    &--video {
+        text-transform: uppercase;
+        color: #ff823b;
+
+        &:hover {
+            color: #124f48;
+
+            & #{$block}__icon-circle{
+                background-color: #124f48;
+            }
+            & #{$block}__icon {
+                color: #fff;
+            }
+        }
+    }
+
+    &--light {
+        font-family: var(--second-family);
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        color: #ff823b;
+
+        &:hover {
+            color: #124f48;
+        }
+    }
+
+}
