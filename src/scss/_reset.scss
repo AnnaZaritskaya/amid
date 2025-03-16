@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* для изменения алгоритма перерасчета высоты и ширины */
+    box-sizing: border-box;
+  }
+  
+  input,
+  textarea {
+    /* обнуляет значение по умолчанию */
+    outline: 0;
+  }
+  
+  button {
+    border: 0;
+  }

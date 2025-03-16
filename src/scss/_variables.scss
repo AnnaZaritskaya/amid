@@ -1,0 +1,42 @@
+:root {
+  /* Основной фоновый цвет темы */
+  // --color-base: #000000;
+
+  /* Вторичный фоновый цвет, для карточек или подвала */
+  // --color-secondary: #151515;
+
+  /* Основной цвет текста и контента */
+  // --color-primary: #ffffff;
+
+  /* Брендовый цвет, используется для логотипа, ссылок, кнопок, при наведении */
+  // --color-brand: #fed31f;
+
+  /* Второстепенный цвет текста, используется для описаний и менее важных элементов */
+  // --color-muted: #9d9d9d;
+
+  // --color-border: #FFFFFF1A;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+// $color-base: var(--color-base);
+// $color-secondary: var(--color-secondary);
+// $color-primary: var(--color-primary);
+// $color-brand: var(--color-brand);
+// $color-muted: var(--color-muted);
+// $color-border: var(--color-border);
+
+// Typography
+// $font-family-primary: "Century Gothic";
+// $font-family-secondary: ;
+
+// Breakpoints
+$screen-xs: 320px;
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+$screen-xxl: 1920px;
+$screen-2k: 2560px;
+$screen-4k: 3840px;
+
