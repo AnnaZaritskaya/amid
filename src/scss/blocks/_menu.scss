@@ -1,0 +1,55 @@
+@use "../mixins" as *;
+
+// Блок: menu
+.menu {
+    display: inline-flex;
+    list-style: none;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 62px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: #464646;
+        text-decoration: none;
+        white-space: nowrap;
+
+        &:hover {
+            position: relative;
+            transform: scale(1.1);
+            color: #0b041b;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                right: 0;
+                width: 29px;
+                height: 2px;
+                background: #ff7715;
+                transform: translateX(50%)-10px;
+            }
+        }
+    }
+
+    @at-root .footer & {
+        &__link {
+            font-size: 18px;
+            color: #124f48;
+
+            &:hover {
+                color: #ff823b;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

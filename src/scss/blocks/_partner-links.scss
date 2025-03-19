@@ -1,0 +1,18 @@
+@use '../mixins' as *;
+
+// Блок: partner-links
+.partner-links {
+    // max-width: 1110px; будет контейнер?
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    &__item {
+        display: flex;
+        justify-content: center;
+        width: 255px;
+        border-radius: 10px;
+        background: #f1faf9;
+        margin-bottom: 29px;
+    }
+}

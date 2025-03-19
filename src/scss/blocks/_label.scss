@@ -1,0 +1,15 @@
+@use "../mixins" as *;
+
+// Блок: label
+.label {
+    display: inline;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.1em;
+    color: #ff6107;
+    background: #fff;
+    border: 1px solid #f2faf9;
+    border-radius: 4px;
+    padding: 4px 22px;
+}

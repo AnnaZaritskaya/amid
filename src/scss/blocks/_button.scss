@@ -20,7 +20,7 @@
     &__arrow {
         width: 14px;
         height: 14px;
-        stroke: #fff !important;
+        stroke: #fff;
         margin-left: 14px;
     }
 
@@ -41,8 +41,14 @@
         fill: #ff823b;
     }
 
-    &--color {
+    &--bg-orange {
         background: #ff823b;
+        border-radius: 31px;
+        padding: 18px 39px;
+    }
+
+    &--bg-dark {
+        background: #124f48;
         border-radius: 31px;
         padding: 18px 39px;
     }

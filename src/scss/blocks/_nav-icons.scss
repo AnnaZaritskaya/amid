@@ -1,0 +1,93 @@
+@use "../mixins" as *;
+
+// Блок: nav-icons
+.nav-icons {
+    $block: &;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 314px;
+    box-shadow: 0 3px 84px 0 rgba(142, 199, 192, 0.3);
+    background-color:  rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 43px 36px;
+
+    &__wrapper {
+        border-radius: 14px;
+        padding: 15px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:nth-child(-n+2) {
+            margin-bottom: 18px;
+        }
+
+        &--briefcase {
+            background: #fff6d4;
+
+            & #{$block}__item {
+                background: #ffc90c;
+            }
+
+            & #{$block}__icon {
+                width: 22px;
+                height: 21px;
+            }
+        }
+
+        &--chart {
+            background: #deffe5;
+
+            & #{$block}__item {
+                background: #198b39;
+            }
+
+            & #{$block}__icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &--money {
+            background: #dbeeff;
+
+            & #{$block}__item {
+                background: #0085ff;
+            }
+
+            & #{$block}__icon {
+                width: 16px;
+                height: 20px;
+            }
+        }
+
+        &--timeline {
+            background: #ffefe5;
+
+            & #{$block}__item {
+                background: #ff7527;
+            }
+
+            & #{$block}__icon {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 74px;
+        height: 74px;
+        border-radius: 14px;
+    }
+
+    &__icon {
+    }
+}
