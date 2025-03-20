@@ -1,0 +1,24 @@
+@use '../mixins' as *;
+
+// Блок: social-icons
+.social-icons {
+    display: flex;
+    list-style: none;
+
+    &__item{
+        &:not(:last-child) {
+            margin-right: 30px;
+          }
+    }
+
+    &__link {
+        display: inline-flex;
+        width: 18px;
+        height: 18px;
+        fill-opacity: 0.51;
+
+        &:hover {
+            fill-opacity: 0.9;
+        }
+    }
+}

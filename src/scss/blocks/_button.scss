@@ -79,7 +79,7 @@
         &:hover {
             color: #124f48;
 
-            & #{$block}__icon-circle{
+            & #{$block}__icon-circle {
                 background-color: #124f48;
             }
             & #{$block}__icon {
@@ -98,5 +98,4 @@
             color: #124f48;
         }
     }
-
 }

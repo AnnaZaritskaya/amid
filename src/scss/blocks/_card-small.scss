@@ -1,0 +1,68 @@
+@use "../mixins" as *;
+
+// Блок: card
+.card-small {
+    $block: &;
+
+    max-width: 364px;
+    padding: 50px 46px;
+    transition: all .5s;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__txt {
+        font-family: var(--third-family);
+        font-size: 18px;
+        line-height: 200%;
+        color: #464646;
+        margin-bottom: 28px;
+    }
+
+    &__top {
+        display: inline-flex;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 28px 24px;
+        margin-bottom: 30px;
+        background: #dbffe9;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 25px;
+        fill: #124f48;
+    }
+
+    &__button {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        transition: all .5s;
+    }
+
+    &:hover {
+        background: #fff;
+        box-shadow: 0 20px 84px 0 rgba(245, 245, 245, 0.8);
+        border-radius: 20px;
+        
+
+        & #{$block}__button {
+            background: #ff823b;
+            border-radius: 31px;
+            display: inline-flex;
+            align-items: center;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: #fff;
+            text-decoration: none;
+            padding: 18px 39px;
+        }
+
+        & .button__arrow {
+            stroke: #FFF;
+        }
+    }
+}
