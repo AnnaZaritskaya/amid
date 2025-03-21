@@ -1,0 +1,72 @@
+@use "../mixins" as *;
+
+// Блок: achievements
+.achievements {
+    &__content {
+        margin-bottom: 70px;
+    }
+    &__bottom {
+        display: flex;
+    }
+
+    &__title {
+        margin-right: 80px;
+        flex: 1 1 50%;
+
+        span {
+            color: #ff823b;
+        }
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-family);
+        margin-top: 57px;
+        flex: 1 1 50%;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 44px;
+        }
+    }
+
+    &__count {
+        max-width: 80px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 222%;
+        color: rgba(18, 79, 72, 0.37);
+    }
+
+    &__text {
+        max-width: 146px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 144%;
+        color: #124f48;
+    }
+
+    &__community {
+        max-width: 163px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 186%;
+        color: #ff823b;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

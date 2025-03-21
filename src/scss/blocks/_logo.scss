@@ -1,0 +1,11 @@
+@use '../mixins' as *;
+
+// Блок: logo
+.logo {
+    text-decoration: none;
+    
+    &__icon {
+        width: 118px;
+        height: 42px;
+    }
+}

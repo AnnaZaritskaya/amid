@@ -8,8 +8,8 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        width: 100%;
-        max-height: 600px;
+        width: 511px;
+        height: 600px;
         background: url(../../src/img/Circle.png) no-repeat bottom;
         background-color: #edfffd;
         border-radius: 20px;
@@ -30,5 +30,11 @@
         line-height: 2;
         color: #464646;
         margin-bottom: 45px;
+    }
+
+    &--up {
+        position: absolute;
+        left: 0;
+        top: -250px;
     }
 }

@@ -45,6 +45,10 @@
         background: #ff823b;
         border-radius: 31px;
         padding: 18px 39px;
+
+        @at-root .hero & {
+            margin-right: 55px;
+        }
     }
 
     &--bg-dark {

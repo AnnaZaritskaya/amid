@@ -1,0 +1,21 @@
+@use '../mixins' as *;
+
+// Блок: page
+.page {
+    &__header{
+        padding: 47px 0 70px 0;
+    }
+
+    &__partner-links {
+        padding: 170px 0 50px 0;
+    }
+
+    &__business-intro {
+        padding: 50px 0 80px 0;
+    }
+
+    &__achievements {
+        padding: 80px 0 70px 0;
+    }
+
+}

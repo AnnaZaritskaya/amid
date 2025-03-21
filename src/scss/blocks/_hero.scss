@@ -1,0 +1,44 @@
+@use "../mixins" as *;
+
+// Блок: hero
+.hero {
+    max-width: 1319px;
+    background: #e9fbf9 url(../../src/img/hero.png) no-repeat 110% bottom;
+    border-radius: 30px;
+    margin: 0 auto;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 570px;
+        padding: 70px 0 106px 0;
+    }
+
+    &__label {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__txt {
+        max-width: 458px;
+        font-family: var(--font-family);
+        font-size: 18px;
+        line-height: 1.67;
+        color: #464646;
+        margin-bottom: 50px;
+    }
+
+    &__nav-icons {
+        position: absolute;
+        bottom: -80px;
+        right: 225px;
+    }
+
+}

@@ -6,7 +6,7 @@
 
     max-width: 364px;
     padding: 50px 46px;
-    transition: all .5s;
+    transition: all 0.5s;
 
     &__title {
         margin-bottom: 20px;
@@ -14,6 +14,8 @@
 
     &__txt {
         font-family: var(--third-family);
+        height: 108px;
+        overflow: hidden;
         font-size: 18px;
         line-height: 200%;
         color: #464646;
@@ -27,6 +29,14 @@
         padding: 28px 24px;
         margin-bottom: 30px;
         background: #dbffe9;
+
+        &--clip {
+            background: #fff7ca;
+        }
+
+        &--graph {
+            background: #ffe9e0;
+        }
     }
 
     &__icon {
@@ -38,14 +48,13 @@
     &__button {
         padding-top: 18px;
         padding-bottom: 18px;
-        transition: all .5s;
+        transition: all 0.5s;
     }
 
     &:hover {
         background: #fff;
         box-shadow: 0 20px 84px 0 rgba(245, 245, 245, 0.8);
         border-radius: 20px;
-        
 
         & #{$block}__button {
             background: #ff823b;
@@ -62,7 +71,7 @@
         }
 
         & .button__arrow {
-            stroke: #FFF;
+            stroke: #fff;
         }
     }
 }

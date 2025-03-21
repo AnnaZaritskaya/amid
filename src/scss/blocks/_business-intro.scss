@@ -1,0 +1,34 @@
+@use "../mixins" as *;
+
+// Блок: business-intro
+.business-intro {
+    &__content {
+        margin-bottom: 20px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__title {
+        flex: 1 1 50%;
+        margin-right: 110px;
+    }
+
+    &__txt {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-family);
+        font-size: 18px;
+        line-height: 1.67;
+        color: #464646;
+        flex: 1 1 50%;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+    }
+}
