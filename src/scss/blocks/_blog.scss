@@ -1,0 +1,31 @@
+@use "../mixins" as *;
+
+// Блок: blog
+.blog {
+    &__content {
+        width: 100%;
+        max-width: 670px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 84px;
+    }
+
+    &__label, &__title {
+        margin-bottom: 25px;
+    }
+
+    &__txt {
+        font-family: var(--font-family);
+        font-size: 18px;
+        line-height: 1.67;
+        text-align: center;
+        color: #464646;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+    }
+}

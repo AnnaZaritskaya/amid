@@ -1,0 +1,64 @@
+@use "../mixins" as *;
+
+// Блок: footer
+.footer {
+    background: #e9fbf9;
+    padding-top: 70px;
+
+    &__top {
+        margin-bottom: 70px;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 640px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 92px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-txt {
+        font-family: var(--font-family);
+        font-size: 12px;
+        color: #ff823b;
+        margin-top: 8px;
+    }
+
+    &__contact {
+        font-family: var(--font-family);
+        font-size: 18px;
+        line-height: 2;
+        color: #124f48;
+    }
+
+    &__bottom {
+        background: #124f48;
+        padding: 17px 0;
+    }
+
+    &__wrapper-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__bottom-txt {
+        font-family: var(--second-family);
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+    }
+}
