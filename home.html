@@ -55,7 +55,7 @@
       </div>
       <div class="nav-icons hero__nav-icons">
         <span class="nav-icons__wrapper nav-icons__wrapper--briefcase">
-          <a href="" class="nav-icons__item">
+          <a href="#blog" class="nav-icons__item">
             <svg class="nav-icons__icon">
               <use xlink:href="#briefcase"></use>
             </svg>
@@ -125,6 +125,7 @@
 
   <section class="business-intro page__business-intro">
     <div class="g-wrapper business-intro__wrapper">
+      <!-- content можно вынести в UI -->
       <div class="business-intro__content">
         <div class="label business-intro__label">services</div>
         <div class="business-intro__bottom">
@@ -197,7 +198,7 @@
           <h2 class="title title--h2 achievements__title">We Worked With <span>100+</span> Company Over <span>10</span>
             Years</h2>
           <div class="achievements__txt">
-
+            <!-- MAX-WIDTH c флексами не работает,надо пример: Flex: 1 1 25-->
             <div class="achievements__info">
               <p class="achievements__count">9k+</p>
               <p class="achievements__text">Completed Full Projects</p>
@@ -257,7 +258,7 @@
     </div>
   </section>
 
-  <section class="blog page__blog">
+  <section id="blog" class="blog page__blog">
     <div class="g-wrapper blog__wrapper">
       <div class="blog__content">
         <div class="label blog__label">blog</div>
@@ -309,95 +310,95 @@
   </section>
 
   <footer class="footer page__footer">
-    <div class="g-wrapper footer__wrapper">
-      <div class="footer__top">
-        <div class="footer__content">
-          <h2 class="title title--h2 footer__title">Subscribe To Our Newsletter Get The Best Offers</h2>
-          <div class="footer__button">
-            <a href="" class="button button--light">With One Click</a>
-            <a href="" class="button button--bg-orange">Subscribe
-              <svg class="button__arrow">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__main">
-          <div class="footer__logo">
-            <a href="" class="logo">
-              <svg class="logo__icon">
-                <use xlink:href="#logo"></use>
-              </svg>
-            </a>
-            <p class="footer__logo-txt">business consultancy agency</p>
-          </div>
+    <div class="g-wrapper footer__top">
 
-          <ul class="menu footer__menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">About</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Terms</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Blogs</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="footer__contact">
-            <p class="phone">+998 1276 234</p>
-            <p class="address">82/93 Boeind Street. NY</p>
-            <p class="mail">info@amid.mail.com</p>
-          </div>
-
+      <div class="footer__content">
+        <h2 class="title title--h2 footer__title">Subscribe To Our Newsletter Get The Best Offers</h2>
+        <div class="footer__button">
+          <a href="" class="button button--light">With One Click</a>
+          <a href="" class="button button--bg-orange">Subscribe
+            <svg class="button__arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
         </div>
       </div>
+      <div class="footer__main">
+        <div class="footer__logo">
+          <a href="" class="logo">
+            <svg class="logo__icon">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+          <p class="footer__logo-txt">business consultancy agency</p>
+        </div>
+
+        <ul class="menu footer__menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Terms</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Blogs</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer__contact">
+          <p class="phone">+998 1276 234</p>
+          <p class="address">82/93 Boeind Street. NY</p>
+          <p class="mail">info@amid.mail.com</p>
+        </div>
+
+      </div>
+
     </div>
 
     <div class="footer__bottom">
       <div class="g-wrapper footer__wrapper footer__wrapper-bottom">
         <p class="footer__bottom-txt">All Rights Reserved &copy;Debzui2020</p>
 
-      <ul class="social-icons">
-        <li class="social-icons__item">
-          <a href="" class="social-icons__link">
-            <svg class="social-icons__icon">
-              <use xlink:href="#twiter"></use>
-            </svg> 
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="" class="social-icons__link">
-            <svg class="social-icons__icon">
-              <use xlink:href="#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="" class="social-icons__link">
-            <svg class="social-icons__icon">
-              <use xlink:href="#inst"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="" class="social-icons__link">
-            <svg class="social-icons__icon">
-              <use xlink:href="#skype"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="" class="social-icons__link">
-            <svg class="social-icons__icon">
-              <use xlink:href="#in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-icons">
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link">
+              <svg class="social-icons__icon">
+                <use xlink:href="#twiter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link">
+              <svg class="social-icons__icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link">
+              <svg class="social-icons__icon">
+                <use xlink:href="#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link">
+              <svg class="social-icons__icon">
+                <use xlink:href="#skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link">
+              <svg class="social-icons__icon">
+                <use xlink:href="#in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>

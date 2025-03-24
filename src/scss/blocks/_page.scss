@@ -2,12 +2,16 @@
 
 // Блок: page
 .page {
+    $block: &;
+
+    scroll-behavior: smooth;
+
     &__header{
         padding: 47px 0 70px 0;
     }
 
     &__partner-links {
-        padding: 170px 0 50px 0;
+        padding:50px 0;
     }
 
     &__business-intro {
@@ -21,5 +25,10 @@
     &__blog {
         padding: 140px 0;
     }
+
+    &__hero + &__partner-links {
+        margin-top: 90px;
+    }
+
 
 }
